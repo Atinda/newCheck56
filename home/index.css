@@ -1,0 +1,60 @@
+
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5px;
+    border-bottom: 1px solid #a9a9a9;
+}
+.header-row-right{
+    display: flex;
+}
+  .area-tabs {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #a9a9a9;
+  }
+  .area-tabs span {
+    flex: 1;
+    cursor: pointer;
+  }
+  .border {
+    border-left: 1px solid #a9a9a9;
+    border-right: 1px solid #a9a9a9;
+  }
+  .area-btn,
+  .area-history {
+    margin: 5px;
+    padding: 5px;
+  }
+  .area-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .area-history {
+    display: flex;
+    align-items: flex-start;
+  }
+  button {
+    border-radius: 5px;
+    background-color: transparent;
+    border-style: none;
+    border: 1px solid gray;
+  }
+  .member-line {
+    border-top: 1px solid gray;
+  }
+  .cityArea {
+    display: flex;
+  }
+  .cityArea span {
+    padding: 0 3px;
+  }
+  .company {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .company-item {
+    margin: 5px;
+    background: #e8e8e5;
+  }
