@@ -1,5 +1,6 @@
-;"use strict";
-$(function($,window){
+
+;$(function($,window){
+    "use strict";
     var page = {
         // 初始化实例
         init:function(){
