@@ -1,60 +1,81 @@
-
-.header-row{
+.header-row {
     display: flex;
     justify-content: space-between;
-    padding:0 5px;
+    padding: 0 5px;
     border-bottom: 1px solid #a9a9a9;
 }
-.header-row-right{
+
+.header-row-right {
     display: flex;
 }
-  .area-tabs {
+
+.area-tabs {
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #a9a9a9;
-  }
-  .area-tabs span {
+}
+
+.area-tabs span {
     flex: 1;
     cursor: pointer;
-  }
-  .border {
+}
+
+.border {
     border-left: 1px solid #a9a9a9;
     border-right: 1px solid #a9a9a9;
-  }
-  .area-btn,
-  .area-history {
+}
+
+.area-btn,
+.area-history {
     margin: 5px;
     padding: 5px;
-  }
-  .area-btn {
+}
+
+.area-btn {
     display: flex;
     justify-content: space-between;
-  }
-  .area-history {
+}
+
+.area-history {
     display: flex;
     align-items: flex-start;
-  }
-  button {
+}
+
+button {
     border-radius: 5px;
     background-color: transparent;
     border-style: none;
     border: 1px solid gray;
-  }
-  .member-line {
+}
+
+.member-line {
     border-top: 1px solid gray;
-  }
-  .cityArea {
+}
+
+.cityArea {
     display: flex;
-  }
-  .cityArea span {
+}
+
+.cityArea span {
     padding: 0 3px;
-  }
-  .company {
+    cursor: pointer;
+}
+
+.activeBG {
+    background: #ffdba5;
+}
+
+.company {
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
-  }
-  .company-item {
+    justify-content: start;
+}
+
+.company-item {
     margin: 5px;
     background: #e8e8e5;
-  }
+}
+
+.banner2 img {
+    width: 20%
+}

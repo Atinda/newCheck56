@@ -42,7 +42,7 @@
         max-width: 500px;
         margin: 0 auto;
         border: 1px solid #a9a9a9;
-        border-radius: 5px;
+        /* border-radius: 5px; */
     }
     .area-tabs span {
         display: flex;

@@ -34,15 +34,14 @@
     <div class="home">
         <img src="./public/images/logo.png" class="home-image">
         <div class="search-area">
-            <div class="area-tabs">
-                <span>查专线</span>
+            <div class="area-tabs" id="area-tabsID">
+                <span class="activeBG">查专线</span>
                 <span class="border">查公司</span>
                 <span>综合信息</span>
             </div>
             <div style="display: flex;padding: 5px;">
                 <input id="searchValue" type="text" class="form-control" placeholder="请输入目的地城市名称">
-                <button id="search" type="button" class="btn btn-outline-secondary btn-xs"
-                    style="margin-left: 5px;width: 60px;">搜索</button>
+                <button id="search" type="button" class="btn btn-outline-secondary btn-xs" style="margin-left: 5px;width: 60px;">搜索</button>
             </div>
             <div class="area-history">
                 <span>历史记录:</span>
@@ -53,16 +52,76 @@
         <div class="content">
             <div class="banner">
                 <!-- PC端展示的广告图片 -->
+                <!-- <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
                 <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
                 <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
                 <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
                 <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
                 <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
                 <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
-                <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
-                <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset="">
+                <img class="home-image1" src="./public/images/logo.png" alt="广告图片" srcset=""> -->
+
+                <div id="carouselExampleControls" class="carousel slide home-image1" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active " style="width:100%">
+                            <div class="banner banner2">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                            </div>
+
+                        </div>
+                        <div class="carousel-item" style="width:100%">
+                            <div class="banner banner2">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="width:100%">
+                            <div class="banner banner2">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                                <img src="./public/images/logo.png" alt="广告图片" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
                 <!-- 移动端的轮播图片 -->
                 <div id="carouselExampleControls" class="carousel slide isShow-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./public/images/logo.png" class="d-block w-100" alt="广告图片">
@@ -85,58 +144,10 @@
                 </div>
             </div>
             <div class="member-line">
-                <div class="cityArea">
-                    <span>华中</span><span>华南</span><span>华东</span><span>华北</span><span>东北</span><span>西南</span><span>西北</span>
+                <div class="cityArea" id="cityAreaItem">
+                    <span class="activeBG setBG">华中</span><span class="setBG">华南</span><span class="setBG">华东</span><span class="setBG">华北</span><span class="setBG">东北</span><span class="setBG">西南</span><span class="setBG">西北</span>
                 </div>
-                <div class="company">
-                    <div class="company-item"><img src="./public/images/logo.png" alt="公司照片" class="company-image">
-                        <span>
-                            公司名称:
-                            <span>长沙五洲</span>
-                        </span>
-                    </div>
-                    <div class="company-item"><img src="./public/images/logo.png" alt="公司照片" class="company-image">
-                        <span>
-                            公司名称:
-                            <span>长沙五洲</span>
-                        </span>
-                    </div>
-                    <div class="company-item"><img src="./public/images/logo.png" alt="公司照片" class="company-image">
-                        <span>
-                            公司名称:
-                            <span>长沙五洲</span>
-                        </span>
-                    </div>
-                    <div class="company-item"><img src="./public/images/logo.png" alt="公司照片" class="company-image">
-                        <span>
-                            公司名称:
-                            <span>长沙五洲</span>
-                        </span>
-                    </div>
-                    <div class="company-item"><img src="./public/images/logo.png" alt="公司照片" class="company-image">
-                        <span>
-                            公司名称:
-                            <span>长沙五洲</span>
-                        </span>
-                    </div>
-                    <div class="company-item"><img src="./public/images/logo.png" alt="公司照片" class="company-image">
-                        <span>
-                            公司名称:
-                            <span>长沙五洲</span>
-                        </span>
-                    </div>
-                    <div class="company-item"><img src="./public/images/logo.png" alt="公司照片" class="company-image">
-                        <span>
-                            公司名称:
-                            <span>长沙五洲</span>
-                        </span>
-                    </div>
-                    <div class="company-item"><img src="./public/images/logo.png" alt="公司照片" class="company-image">
-                        <span>
-                            公司名称:
-                            <span>长沙五洲</span>
-                        </span>
-                    </div>
+                <div class="company" id="companyItems">
                 </div>
             </div>
         </div>
