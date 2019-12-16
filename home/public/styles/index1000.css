@@ -1,11 +1,13 @@
 /* 视窗>=1000时的样式表 */
 
 @media (min-width: 1000px) {
+
     /* 公共样式 */
     html,
     body {
         font-size: 14px !important;
     }
+
     /* ------------------------------主页样式开始----------------------------- */
     /* 头部 */
     .header-row {
@@ -16,26 +18,31 @@
         top: 0;
         background: white;
     }
+
     /* 登录按钮 */
     .setBtn {
         display: block !important;
     }
+
     .setMiniBtn {
         display: none;
         cursor: pointer
     }
+
     /* 主页中的图片 */
     .home-image {
         margin-top: 250px;
         height: 60px;
         width: 200px
     }
+
     /* logo中的图片 */
     .logo-image {
         margin: 0 auto;
         height: 200px;
         width: 250px
     }
+
     /* 搜索区域 */
     .search-area {
         max-width: 530px;
@@ -43,14 +50,17 @@
         border: 1px solid #a9a9a9;
         /* border-radius: 5px; */
     }
+
     .area-tabs span {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .area-tabs {
         height: 28px;
     }
+
     /* 广告区域 */
     .banner {
         margin: 15px auto;
@@ -62,31 +72,40 @@
         max-width: 1000px;
         border: 1px solid gray;
     }
-    .carousel-inner,.carousel-item,.banner2{
+
+    .carousel-inner,
+    .carousel-item,
+    .banner2 {
         height: 100%;
     }
-    .banner2 img{
-        height:50%
+
+    .banner2 img {
+        height: 50%
     }
+
     .home-image1 {
         display: block;
         width: 100%;
         margin: 10px;
     }
+
     .isShow-carousel {
         display: none
     }
+
     .setSwitch {
         padding: 10px;
         background: #dacfcf;
         border-radius: 5px;
     }
-    .carousel-indicators li{
+
+    .carousel-indicators li {
         background-color: #31302b;
         height: 10px;
         width: 10px;
         border-radius: 50%;
     }
+
     /* 地区区域 */
     .member-line {
         margin: 15px auto;
@@ -94,10 +113,12 @@
         max-width: 1000px;
         border: 1px solid gray;
     }
+
     .cityArea {
         display: flex;
         height: 28px;
     }
+
     .cityArea span {
         display: flex;
         justify-content: center;
@@ -105,15 +126,29 @@
         border-bottom: 1px solid gray;
         border-right: 1px solid gray;
     }
+
     .company-item {
         width: 23%;
         height: 150px;
         background: white
     }
+
     .company-image {
         width: 100%;
         height: 75%;
         padding: 0 20px;
     }
+
     /* ------------------------------主页样式结束----------------------------- */
+
+    /* ------------------------------登录页面开始----------------------------- */
+    .homeModal {
+        height: 250px;
+    }
+
+    .home-login-img {
+        height: 200px;
+    }
+
+    /* ------------------------------登录页面结束----------------------------- */
 }

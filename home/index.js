@@ -150,6 +150,17 @@ $(function ($, window) {
             });
             $(".carousel-control-prev-icon").on('click',function(e){
                 $('.carousel').carousel('prev')
+            });
+            // 登录操作
+            $(".login").on('click',function(){
+                console.log('login');
+                // 设置header text
+                $("#exampleModalCenterTitle").text('登录')
+            });
+            // ----------登录页面----------
+            // 点击登录图片事件
+            $('.home-login-img').on('click',function(){
+                console.log('登录图片');
             })
         },
         // 函数方法集合
