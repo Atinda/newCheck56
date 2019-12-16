@@ -58,13 +58,19 @@
         justify-content: center;
         flex-flow: wrap;
         width: 90%;
+        height: 250px;
         max-width: 1000px;
         border: 1px solid gray;
+    }
+    .carousel-inner,.carousel-item,.banner2{
+        height: 100%;
+    }
+    .banner2 img{
+        height:50%
     }
     .home-image1 {
         display: block;
         width: 100%;
-        height: 130px;
         margin: 10px;
     }
     .isShow-carousel {
@@ -74,6 +80,12 @@
         padding: 10px;
         background: #dacfcf;
         border-radius: 5px;
+    }
+    .carousel-indicators li{
+        background-color: #31302b;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
     }
     /* 地区区域 */
     .member-line {

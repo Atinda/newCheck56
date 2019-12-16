@@ -79,3 +79,12 @@ button {
 .banner2 img {
     width: 20%
 }
+.carousel-indicators li{
+    background-color: #31302b;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    background: red
+}

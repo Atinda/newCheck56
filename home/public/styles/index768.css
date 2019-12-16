@@ -60,7 +60,7 @@
     .home-image1 {
         display: none;
     }
-    .home-image2 {
+    .isShow-carousel {
         display: block;
         width: 100%;
     }
