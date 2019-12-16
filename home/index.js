@@ -125,6 +125,7 @@ $(function ($, window) {
             page.bind();
             page.methods();
             page.initAreaEle(cityAreaData['华南']);
+            $("#registerIframe").hide();
         },
         // 绑定元素事件
         bind: function () {
@@ -159,8 +160,12 @@ $(function ($, window) {
             });
             // ----------登录页面----------
             // 点击登录图片事件
-            $('.home-login-img').on('click',function(){
+            $('.modal-confirm-btn').on('click',function(){
                 console.log('登录图片');
+                // 设置header text
+                $("#exampleModalCenterTitle").text('注册');
+                $("#loginIframe").hide();
+                $("#registerIframe").show();
             })
         },
         // 函数方法集合
