@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 5px;
-    border-bottom: 1px solid #a9a9a9;
+    border-bottom: 1px solid rgba(187, 187, 187, 1);
 }
 
 .header-row-right {
@@ -12,7 +12,7 @@
 .area-tabs {
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid #a9a9a9;
+    border-bottom: 1px solid rgba(187, 187, 187, 1);
 }
 
 .area-tabs span {
@@ -21,8 +21,8 @@
 }
 
 .border {
-    border-left: 1px solid #a9a9a9;
-    border-right: 1px solid #a9a9a9;
+    border-left: 1px solid rgba(187, 187, 187, 1);
+    border-right: 1px solid rgba(187, 187, 187, 1);
 }
 
 .area-btn,
@@ -45,11 +45,14 @@ button {
     border-radius: 5px;
     background-color: transparent;
     border-style: none;
-    border: 1px solid gray;
+    border: 1px solid rgba(187, 187, 187, 1);
 }
-
+.content{
+    position: relative;
+    margin: 0 auto;
+}
 .member-line {
-    border-top: 1px solid gray;
+    border-top: 1px solid rgba(187, 187, 187, 1);
 }
 
 .cityArea {

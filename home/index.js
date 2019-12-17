@@ -19,6 +19,22 @@ $(function ($, window) {
                 name: "华中五洲",
                 imgUrl: "./public/images/logo.png"
             },
+            {
+                name: "华中五洲",
+                imgUrl: "./public/images/logo.png"
+            },
+            {
+                name: "华中五洲",
+                imgUrl: "./public/images/logo.png"
+            },
+            {
+                name: "华中五洲",
+                imgUrl: "./public/images/logo.png"
+            },
+            {
+                name: "华中五洲",
+                imgUrl: "./public/images/logo.png"
+            },
         ],
         "华南": [{
                 name: "华南五洲",
@@ -124,7 +140,7 @@ $(function ($, window) {
         init: function () {
             page.bind();
             page.methods();
-            page.initAreaEle(cityAreaData['华南']);
+            page.initAreaEle(cityAreaData['华中']);
             $("#registerIframe").hide();
             $("#choiceCityIframe").hide();
             $(".modal-confirm-btn2").hide();
@@ -169,8 +185,8 @@ $(function ($, window) {
                 $("#loginIframe").hide();
                 $("#choiceCityIframe").hide();
                 $("#registerIframe").show();
-                $(".modal-confirm-btn1").hide();
-                $(".modal-confirm-btn2").show();
+                // $(".modal-confirm-btn1").hide();
+                // $(".modal-confirm-btn2").show();
             });
             // 点击注册页面事件
             $('.modal-confirm-btn2').on('click',function(){
@@ -180,8 +196,8 @@ $(function ($, window) {
                 $("#loginIframe").hide();
                 $("#registerIframe").hide();
                 $("#choiceCityIframe").show();
-                $(".modal-confirm-btn2").hide();
-                $(".modal-confirm-btn1").show();
+                // $(".modal-confirm-btn2").hide();
+                // $(".modal-confirm-btn1").show();
             });
             // 选择城市
             $("#province").on('change',function(){

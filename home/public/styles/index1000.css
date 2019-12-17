@@ -8,15 +8,39 @@
         font-size: 14px !important;
     }
 
+    /* left: 432px;
+    top: 398px;
+    width: 576px;
+    height: 101px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid rgba(187, 187, 187, 1); */
     /* ------------------------------主页样式开始----------------------------- */
+    .home {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
     /* 头部 */
     .header-row {
-        height: 50px;
-        line-height: 50px;
+        height: 52px;
+        line-height: 52px;
         text-align: center;
         position: sticky;
         top: 0;
         background: white;
+    }
+
+    .header-row-left {
+        padding-left: 31px;
+    }
+
+    .weather {
+        padding-left: 24px;
+    }
+
+    .official-account {
+        margin-right: 30px;
     }
 
     /* 登录按钮 */
@@ -31,8 +55,8 @@
 
     /* 主页中的图片 */
     .home-image {
-        margin-top: 250px;
-        height: 60px;
+        margin-top: 214px;
+        height: 61px;
         width: 200px
     }
 
@@ -45,10 +69,31 @@
 
     /* 搜索区域 */
     .search-area {
-        max-width: 530px;
-        margin: 0 auto;
-        border: 1px solid #a9a9a9;
-        /* border-radius: 5px; */
+        max-height: 136px;
+        max-width: 576px;
+        margin: 34px auto;
+        border: 1px solid rgba(187, 187, 187, 1);
+    }
+
+    .search-item {
+        display: flex;
+        padding: 16px 20px;
+    }
+
+    .form-control {
+        width: 433px;
+    }
+
+    .search-item .btn-outline-secondary {
+        margin-left: 22px;
+        margin-top: 2px;
+        width: 80px;
+        height: 28px;
+        line-height: 16px;
+    }
+
+    .area-history {
+        padding-left: 16px;
     }
 
     .area-tabs span {
@@ -62,15 +107,25 @@
     }
 
     /* 广告区域 */
+    .home-add {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        z-index: 10;
+    }
+
     .banner {
         margin: 15px auto;
         display: flex;
+        position: inherit;
         justify-content: center;
         flex-flow: wrap;
-        width: 90%;
-        height: 250px;
-        max-width: 1000px;
-        border: 1px solid gray;
+        height: 418px;
+        padding: 40px 45px;
+        width: 95%;
+        max-width: 1152px;
+        border: 1px solid rgba(187, 187, 187, 1);
     }
 
     .carousel-inner,
@@ -80,7 +135,11 @@
     }
 
     .banner2 img {
-        height: 50%
+        height: 121px;
+        width: 200px;
+        max-height: 151px;
+        max-width: 200px;
+        margin: 15px 25px;
     }
 
     .home-image1 {
@@ -109,9 +168,9 @@
     /* 地区区域 */
     .member-line {
         margin: 15px auto;
-        width: 90%;
-        max-width: 1000px;
-        border: 1px solid gray;
+        width: 95%;
+        max-width: 1152px;
+        border: 1px solid rgba(187, 187, 187, 1);
     }
 
     .cityArea {
@@ -123,8 +182,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid gray;
-        border-right: 1px solid gray;
+        width: 80px;
+        border-bottom: 1px solid rgba(187, 187, 187, 1);
+        border-right: 1px solid rgba(187, 187, 187, 1);
     }
 
     .company-item {
@@ -151,4 +211,14 @@
     }
 
     /* ------------------------------登录页面结束----------------------------- */
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1280px) {
+    .banner2 img{
+        height: 123px;
+        max-height: 168px;
+        width: 173px;
+        max-width: 192px;
+        margin: 16px;
+    }
 }
