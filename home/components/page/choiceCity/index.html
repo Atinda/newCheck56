@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../public/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../public/styles/common.css">
+    <link rel="stylesheet" href="../../../public/styles/index320.css">
+    <link rel="stylesheet" href="../../../public/styles/index768.css">
+    <link rel="stylesheet" href="../../../public/styles/index1000.css">
+    <style>
+    .cityRow{
+        display: flex;
+    }
+    .cityRow span{
+        margin: 5px;
+    }
+    .form-inline,.distpicker{
+        display: flex;
+    }
+    .form-group{
+        margin: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="cityRow"><span>当前城市:</span><span>长沙</span></div>
+    <div class="cityRow"><span>热门城市:</span><span>广州</span><span>杭州</span><span>昆明</span><span>天津</span><span>西安</span></div class="cityRow">
+    <form class="form-inline">
+        <div class="distpicker" data-toggle="distpicker">
+          <div  class="form-group">
+            <label class="sr-only" for="province">Province</label>
+            <select class="form-control" id="province"></select>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="city">City</label>
+            <select class="form-control" id="city"></select>
+          </div>
+        </div>
+      </form>
+</body>
+<script src="../../../public/js/JQuery.3.2.1.min.js"></script>
+<script src="../../../public/js/bootstrap.min.js"></script>
+<script src="../../../public/js/distpicker.data.js"></script>
+<script src="../../../public/js/distpicker.js"></script>
+<script src="../../../public/js/main.js"></script>
+<script src="../../../index.js"></script>
+
+</html>

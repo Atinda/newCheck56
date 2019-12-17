@@ -126,6 +126,8 @@ $(function ($, window) {
             page.methods();
             page.initAreaEle(cityAreaData['华南']);
             $("#registerIframe").hide();
+            $("#choiceCityIframe").hide();
+            $(".modal-confirm-btn2").hide();
         },
         // 绑定元素事件
         bind: function () {
@@ -160,12 +162,33 @@ $(function ($, window) {
             });
             // ----------登录页面----------
             // 点击登录图片事件
-            $('.modal-confirm-btn').on('click',function(){
+            $('.modal-confirm-btn1').on('click',function(){
                 console.log('登录图片');
                 // 设置header text
                 $("#exampleModalCenterTitle").text('注册');
                 $("#loginIframe").hide();
+                $("#choiceCityIframe").hide();
                 $("#registerIframe").show();
+                $(".modal-confirm-btn1").hide();
+                $(".modal-confirm-btn2").show();
+            });
+            // 点击注册页面事件
+            $('.modal-confirm-btn2').on('click',function(){
+                console.log('注册页面');
+                // 设置header text
+                $("#exampleModalCenterTitle").text('选择城市');
+                $("#loginIframe").hide();
+                $("#registerIframe").hide();
+                $("#choiceCityIframe").show();
+                $(".modal-confirm-btn2").hide();
+                $(".modal-confirm-btn1").show();
+            });
+            // 选择城市
+            $("#province").on('change',function(){
+                console.log(this.value)
+            })
+            $("#city").on('change',function(){
+                console.log(this.value)
             })
         },
         // 函数方法集合
