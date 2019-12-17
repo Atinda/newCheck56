@@ -93,7 +93,7 @@
     }
 
     .area-history {
-        padding-left: 16px;
+        padding-left: 25px;
     }
 
     .area-tabs span {
@@ -164,7 +164,9 @@
         width: 10px;
         border-radius: 50%;
     }
-
+    .carousel-indicators{
+        bottom: -38px;
+    }
     /* 地区区域 */
     .member-line {
         margin: 15px auto;
@@ -211,10 +213,20 @@
     }
 
     /* ------------------------------登录页面结束----------------------------- */
+    /* ------------------------------注册页面开始----------------------------- */
+    #registerIframe{
+        margin: 0 auto;
+        max-width: 250px;
+    }
+    #registerIframe .form-control {
+        width: 140px;
+    }
+
+    /* ------------------------------注册页面结束----------------------------- */
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1280px) {
-    .banner2 img{
+    .banner2 img {
         height: 123px;
         max-height: 168px;
         width: 173px;

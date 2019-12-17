@@ -1,3 +1,4 @@
+html::-webkit-scrollbar {display:none}
 .header-row {
     display: flex;
     justify-content: space-between;

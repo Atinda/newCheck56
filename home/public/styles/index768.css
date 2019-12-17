@@ -51,6 +51,7 @@
         margin: 26px auto;
         border: 1px solid #a9a9a9;
     }
+
     .search-item {
         display: flex;
         padding: 16px 20px;
@@ -67,9 +68,11 @@
         height: 28px;
         line-height: 16px;
     }
-    .area-history{
+
+    .area-history {
         padding-left: 16px;
     }
+
     .area-tabs span {
         display: flex;
         justify-content: center;
@@ -88,6 +91,7 @@
         top: 8px;
         z-index: 10;
     }
+
     .banner {
         width: 86%;
         margin: 0 auto;
@@ -143,16 +147,19 @@
         height: 75%;
         padding: 0 20px;
     }
-    .cityArea span{
+
+    .cityArea span {
         width: 80px;
     }
+
     /* ------------------------------主页样式结束----------------------------- */
 
     /* ------------------------------登录页面开始----------------------------- */
-    #registerForm{
+    #registerForm {
         width: 245px;
         margin: 0 auto;
     }
+
     .homeModal {
         height: 330px;
     }
@@ -162,4 +169,29 @@
     }
 
     /* ------------------------------登录页面结束----------------------------- */
+    /* ------------------------------注册页面开始----------------------------- */
+    .registerIframe .form-control{
+        width: 80px;
+    }
+    /* ------------------------------注册页面结束----------------------------- */
+    /* ------------------------------选择城市开始----------------------------- */
+    /* 选择城市 */
+    .cityRow {
+        display: flex;
+    }
+
+    .cityRow span {
+        margin: 5px;
+    }
+
+    .form-inline,
+    .distpicker {
+        display: flex;
+    }
+
+    .form-group {
+        margin: 5px;
+    }
+
+    /* ------------------------------选择城市结束----------------------------- */
 }

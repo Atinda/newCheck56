@@ -2,16 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalacle=no">
+    <link rel="stylesheet" href="../../../public/styles/bootstrap.min.css">
     <link rel="stylesheet" href="../../../public/styles/common.css">
     <link rel="stylesheet" href="../../../public/styles/index320.css">
     <link rel="stylesheet" href="../../../public/styles/index768.css">
     <link rel="stylesheet" href="../../../public/styles/index1000.css">
 </head>
 <body>
-    <img src="../../../public/images/account.png" alt="二维码" srcset="" class="home-login-img">
+    <img src="../../../public/images/account.png" alt="二维码" srcset="" id="home-login-img" style="width: 100px;height: 100px;">
     <p class="modal-confirm-btn1" style="cursor: pointer;font-size: 20px;">微信扫一扫</p>
 </body>
 <script src="../../../public/js/JQuery.3.2.1.min.js"></script>
 <script src="../../../public/js/bootstrap.min.js"></script>
+<script>
+
+$(function($){
+$(".modal-confirm-btn1").on('click',function(){
+    let iframe = parent.document.getElementById("registerIframe");
+    let iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+    $(iframeDocument).show()
+    console.log('adsadad',$(iframeDocument))
+})
+})
+// </script>
+
 <script src="../../../index.js"></script>
 </html>
